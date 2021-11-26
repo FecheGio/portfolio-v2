@@ -30,16 +30,16 @@ export default function NavBar() {
           <nav className="header">
             <ul>
               <li>
-                <a href="/">INICIO</a>
+                <a>INICIO</a>
               </li>
               <li>
-                <a href="/publicaciones/">PUBLICACIONES</a>
+                <a>PUBLICACIONES</a>
               </li>
               <li>
-                <a href="/el-juglar/">EL JUGLAR</a>
+                <a>EL JUGLAR</a>
               </li>
               <li>
-                <a href="/contact/">CONTACTO</a>
+                <a>CONTACTO</a>
               </li>
             </ul>
           </nav>

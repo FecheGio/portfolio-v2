@@ -5,7 +5,6 @@ import { Flex, Spacer, Grid, GridItem, Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useSmallScreenDetector } from "./hooks";
 import DrawerMenu from "./components/drawer";
 import NavBar from "./components/navBar";
 import avatar from "../public/fechesinfondo.png";
