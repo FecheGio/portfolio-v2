@@ -1,7 +1,7 @@
 html,
 body {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #372054;
   color: #fefefe;
   width: 100%;
@@ -10,15 +10,150 @@ body {
   padding: 0;
 }
 
-#__next{
+#__next {
   height: 100%;
 }
 
 a {
-  color: #F235FF;
+  color: #f235ff;
   text-decoration: none;
+}
+
+a.highlighted {
+  background-color: #f235ff;
+  color: #fefefe;
+  padding: 8px;
+  font-weight: bold;
+}
+
+h1.presentation {
+  font-size: 40px;
+  font-weight: 400;
 }
 
 * {
   box-sizing: border-box;
+}
+
+Button.tab {
+  background-color: #372054;
+  border: none;
+  color: rgb(185, 185, 185);
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 16px 8px 16px;
+}
+
+Button.tab:hover {
+  color: #fefefe;
+}
+
+Button.tab:focus {
+  color: #fefefe;
+  display: inline-block;
+  position: relative;
+}
+
+Button.tab:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fefefe;
+  transform-origin: bottom right;
+}
+
+Button.tab:focus:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  border-bottom: solid #fefefe 1px;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+/*
+
+Works tab
+
+*/
+
+nav.tab {
+  font-weight: bold;
+  padding: 1em;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  color: white;
+  font-size: 1.17em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+nav li a:hover {
+  background: #f235ff;
+  color: white;
+}
+
+/*
+
+NavBar
+
+*/
+
+nav.header {
+  display: flex;
+  font-weight: bold;
+  padding: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  color: white;
+  font-size: 1.17em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+nav li a:hover {
+  background: #f235ff;
+  color: white;
+}
+
+@media screen and (min-width: 480px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
