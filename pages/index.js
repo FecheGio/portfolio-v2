@@ -31,6 +31,7 @@ export default function Home() {
           <Image
             objectFit="cover"
             src={avatar}
+            className="borderRadius"
             alt="Ilustración de Fede Giobergia hecha por Leandro Amarillo"
           />
         </Box>
