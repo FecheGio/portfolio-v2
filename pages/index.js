@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Flex, Spacer, Grid, GridItem, Box } from "@chakra-ui/react";
+import { Flex, Spacer, Grid, GridItem, Box, Divider } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -65,7 +65,9 @@ export default function Home() {
           investigación, diseño e iteración de productos digitales.{" "}
         </p>
 
-        <Flex justify="center" direction="row">
+        <Divider orientation="horizontal" />
+
+        <Flex justify="center" direction="row" style={{ marginTop: "48px" }}>
           <Works></Works>
         </Flex>
       </Flex>

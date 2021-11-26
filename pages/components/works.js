@@ -17,9 +17,11 @@ export default function Works() {
     <>
       <Tabs>
         <TabList>
-          <Tab className="tab">One</Tab>
-          <Tab className="tab">Two</Tab>
-          <Tab className="tab">Three</Tab>
+          <Tab className="tab">MI TRABAJO</Tab>
+          <Tab className="tab">UI</Tab>
+          <Tab className="tab">UX</Tab>
+          <Tab className="tab">REDACCIÓN</Tab>
+          <Tab className="tab">EL JUGLAR</Tab>
         </TabList>
 
         <TabPanels>
