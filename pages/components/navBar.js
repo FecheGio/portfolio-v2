@@ -27,7 +27,7 @@ export default function NavBar() {
             marginBottom: `1.45rem`,
           }}
         >
-          <nav class="header">
+          <nav className="header">
             <ul>
               <li>
                 <a href="/">INICIO</a>

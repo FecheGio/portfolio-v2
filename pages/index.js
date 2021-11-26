@@ -36,9 +36,9 @@ export default function Home() {
           />
         </Box>
 
-        <h1 class="presentation">
+        <h1 className="presentation">
           {" "}
-          Hola, soy <a class="highlighted">Fede Giobergia</a>
+          Hola, soy <a className="highlighted">Fede Giobergia</a>
         </h1>
 
         <Flex
